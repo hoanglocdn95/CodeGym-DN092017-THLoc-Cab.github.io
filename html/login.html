@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAB.VN</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- <link rel="alternate" href="bootstrap.min.js"> -->
+  <!-- <link rel="alternate" href="npm.js"> -->
+  <!-- <link rel="alternate" href="bootstrap.js"> -->
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="alternate" href="../css/bootstrap-theme.min.css">
+  <!-- <link rel="alternate" href="bootstrap.css.map"> -->
+  <link rel="alternate" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cab3.css">
+</head>
+<body>
+  <br>
+  <br>
+  <header class="hidden-xs hidden-sm col-md-12 col-lg-12">
+
+  </header><!-- /header -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+          <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon glyphicon-barcode"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="cab3.html"><span class="glyphicon glyphicon-home"></span>Trang Chủ</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>Liên Hệ<span class="sr-only">(current)</span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-text-background"></span>Ngôn Ngữ <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Tiếng Việt</a></li>
+              <li><a href="#">English</a></li>
+              <li><a href="#">Nihongo</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Default language</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- login area -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Tài khoản<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Truyện đang theo dõi</a></li>
+              <li><a href="#">Truyện đánh dấu</a></li>
+              <li><a href="#">Truyện của bạn</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Đổi mật khẩu</a></li>
+              <li><a href="#">Cập nhật thông tin</a></li>
+              <li><a href="#">Đăng xuất</a></li>
+
+            </ul>
+          </li>
+        </ul>
+
+        <form class="navbar-form navbar-right" method="get">
+          <div class="form-group">
+            <input type="form-control" name="search" placeholder="Tìm truyện"></input>
+            <button type="button" class="btn btn-outline-primary"><span class="glyphicon glyphicon-zoom-in"></span></button>
+          </div>
+
+          <!-- Small modal -->
+          <button type="button" class="btn btn-primary" href="#"><span class="glyphicon glyphicon-fire"></span>Đăng nhập/Đăng ký</button>
+
+        </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <section>
+      <div class="container form-login">
+      <form action="/" method="POST" role="form" >
+        <legend id="legend-text">Tham gia cùng chúng tôi ngày hôm nay!!!</legend>
+
+        <div class="form-group">
+          <label>ID</label>
+          <input type="text" class="form-control" id="username" name="name" placeholder="Ex:Tran Hoang Loc">
+
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control"  name="email" autocomplete="off" placeholder="abc123@example.com">
+        </div>
+        <div class="form-group">
+          <label>Mật Khẩu</label>
+          <input type="password" class="form-control"  name="password" placeholder="********">
+        </div>
+        <div class="form-group">
+          <label for="">Ngày Sinh</label>
+          <input type="date" class="form-control"  name="birthday" placeholder="mm/dd/yyyy">
+        </div>
+        
+        <div class="radio form-group">
+          <label for=""><strong>Giới Tính</strong></label>
+          <label class="form-option">
+            <input type="radio" name="gender"  value="male" checked>Nam
+          </label>
+          <label class="form-option">
+            <input type="radio" name="gender"  value="female">Nữ
+          </label>
+          <label class="form-option">
+            <input type="radio" name="gender"  value="other">Giới tính khác
+          </label>
+        </div>
+        <div class="button-form">
+          <button type="submit" class="btn btn-primary" id="submit_form"><strong>Đăng nhập</strong></button>
+          <button type="reset" class="btn btn-primary"><strong>Đặt lại</strong></button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <article>
+      
+    
+
+  </article>
+  <footer>
+    <div class="container">
+      <div class="row">
+       <div class="footer-contact col-xs-12 col-ms-12 col-md-4 col-lg-4">
+        <h5><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> hoanglocdn95@gmail.com <br>
+          <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 0935.96.49.49 <br>
+        </h5>
+      </div>
+      <div class="footer-center col-xs-12 col-ms-12 col-md-4 col-lg-4">
+        <h4>Copyright&copy Tran Hoang Loc DN092017</h4>
+      </div>
+      <div id="footer-right col-xs-12 col-ms-12 col-md-4 col-lg-4">
+        <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+        <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+        <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+        <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+        <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+        <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+
+        <button type="button" class="btn btn-defaul btn-md btn-footer">
+          <a href="https://www.facebook.com/lst.tranloc"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>Facebook</button>
+        </button>
+        <button type="button" class="btn btn-default btn-md btn-footer">
+          <a href="https://www.facebook.com/lst.tranloc"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>Tumblr</button>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/npm.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/jquery.flexisel.js"></script>
+  <script type="text/javascript" src="../js/jquery-3.2.1.slim.js"></script>
+  <!-- <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script> -->
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="../js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="../js/jquery.kwicks-1.5.1.js"></script>
+
+</body>
+</html>

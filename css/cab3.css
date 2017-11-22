@@ -1,0 +1,191 @@
+
+ul#images {
+  margin: 0 15px 10px 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+ul#images li {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  float: left;
+  width: 170px;
+  height: 300px;
+}
+
+.container.form-login{
+	width: 35%;
+    margin: 25px auto;
+    padding: 10px;
+    box-shadow: 3px 3px 10px;
+}
+#legend-text {
+    display: inline-block;
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: inherit;
+    text-align: center;
+    color: #11375b;
+    border: 0;
+    font-family:'Gloria Hallelujah';
+    
+}
+.checkbox, .radio {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.form-option {
+    margin-left: 30px;
+}
+.button-form button{
+    width: 118px;
+    margin: 10px auto;
+	display: inline-box;
+    flex-direction: row;
+}
+
+.container.form-login{
+	 margin: 20px auto;
+     padding: 10px;
+     box-shadow: 3px 3px 10px;
+}
+@media only screen and (max-width:  500px) {
+    .container.form-login {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width:  750px) {
+    .container.form-login {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+    .container.form-login {
+        width: 40%;
+    }
+}
+
+footer{
+	height: auto;
+	padding: 7px;
+	background-color: black;
+}
+
+.footer-contact{
+	color: white;
+}
+
+.footer-right{
+	margin: 0;
+	text-align: right;
+}
+.footer-center{
+	text-align: center;
+	color: white;
+}
+.btn-footer{
+	background-color: black;
+	color: white;
+}
+.content, .left-side{
+	background-color: #DCF1F2;
+	border-radius: 9px;
+}
+.content-menu{
+	width: 99%;
+	background-color: #75A89C;
+	margin: 5px;
+	border-radius: 9px;
+	border: 2px solid;
+	text-align: center;
+}
+.content-menu h3, .font-type-comic{
+	font-family: 'Prata';
+}
+.comic{
+	background-color: #75A89C;
+	border-radius: 9px;
+	border-left: 5px black;
+	border-right: 5px black;
+	box-shadow: 3px 3px lightblue;
+	display: inline-block;
+	float: left;
+}
+.comic-image{
+	margin: 5px 5px 5px 5px;
+}
+.comic-image img{
+	height: 400px;
+	width: 100%;
+}
+@media only screen and (max-width:  500px) {
+    .comic-image img {
+        height: 150px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width:  750px) {
+    .container.form-login {
+        height: 250px;
+    }
+}
+
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+    .container.form-login {
+        height: 400px;
+    }
+}
+.comic-btn-see, .comic-btn-read{
+	margin: 3px;
+}
+.comic-btn-see button,.comic-btn-read button{
+	width: 100%;
+	font-family: 'Gloria Hallelujah';
+	
+}
+.comic-btn-see button:hover, .comic-btn-read button:hover{
+	
+	box-shadow: 3px 3px grey;
+	background-color: lightblue;
+	color: black;
+}
+.iframe-map{
+	background-color: #DCF1F2;
+	border-radius: 9px;
+	margin: 15px;
+	padding: 10px;
+}
+.type-comic1{
+	width: 33.33%;
+	height: 50px;
+	padding: 15px;
+	text-align: center;
+	background: lightgrey;
+}
+.type-comic{
+	width: 33.33%;
+	height: 50px;
+	padding: 15px;
+	text-align: center;
+}
+.type-comic1:hover, .type-comic:hover{
+	background-color: lightblue;
+}
+.left-facebook {
+	margin-top: 15px;
+	background-color: #dad7db;
+	padding: 5px;
+	display: block;
+	border-radius: 5px;
+}

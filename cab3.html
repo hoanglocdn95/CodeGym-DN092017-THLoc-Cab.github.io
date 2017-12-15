@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caber</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="icon" href="../image/fish.png" type="image/png" sizes="16x16">
+
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+  <link rel="alternate" href="../css/bootstrap.min.css">
+  <link rel="alternate" href="../css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/cab3.css">
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <header class="hidden-xs hidden-sm col-md-12 col-lg-12">
+    <center>
+      <ul id="images">
+
+        <li><a href="#"><img src="../image/seven.jpg" width="600" height="300" alt="truyen-6" /></a></li>
+        <li><img src="../image/dptk.jpg" width="600" height="300" alt="truyen-1" /></li>
+        <li><img src="../image/vdck.jpg" width="600" height="300" alt="truyen-2" /></li>
+        <li><img src="../image/ber.png" width="600" height="300" alt="truyen-3" /></li>
+        <li><img src="../image/bleach.jpg" width="600" height="300" alt="truyen-4" /></li>
+        <li><img src="../image/op.jpg" width="600" height="300" alt="truyen-5" /></li>
+        <li><img src="../image/opm.jpg" width="600" height="300" alt="truyen-6" /></li>
+
+      </ul>
+    </center>
+  </header><!-- /header -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+          <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon glyphicon-barcode"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="cab3.html"><span class="glyphicon glyphicon-home"></span>Trang Chủ</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>Liên Hệ<span class="sr-only">(current)</span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Góp ý</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-text-background"></span>Ngôn Ngữ <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Tiếng Việt</a></li>
+              <li><a href="#">English</a></li>
+              <li><a href="#">Nihongo</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Default language</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- login area -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Tài khoản<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Truyện đang theo dõi</a></li>
+              <li><a href="#">Truyện đánh dấu</a></li>
+              <li><a href="#">Truyện của bạn</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Đổi mật khẩu</a></li>
+              <li><a href="#">Cập nhật thông tin</a></li>
+              <li><a href="#">Đăng xuất</a></li>
+
+            </ul>
+          </li>
+        </ul>
+
+        <form class="navbar-form navbar-right" method="get">
+          <div class="form-group">
+            <input type="form-control" name="search" placeholder="Tìm truyện"></input>
+            <button type="button" class="btn btn-outline-primary"><span class="glyphicon glyphicon-zoom-in"></span></button>
+          </div>
+          <a href="login.html">
+            <button type="button" class="btn btn-primary" href="login.html"><span class="glyphicon glyphicon-fire"></span>Đăng nhập/Đăng ký</button>
+            
+          </a>
+          <!-- Small modal -->
+
+        </form>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="content col-xs-12 col-sm-12 col-md-9 col-lg-9">
+          <div class="row">
+            <div class="content-menu col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="row">
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                  <button id="menu-btn-left" class="btn-default btn-lg"><span class="glyphicon glyphicon-arrow-left"></span></button>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                  <center>
+                    <h3 id="menu-title">TRUYỆN NỔI BẬT</h3>
+                  </center>
+                </div>
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                  <button id="menu-btn-right" class="btn-default btn-lg"><span class="glyphicon glyphicon-arrow-right"></span></button>
+                </div>
+              </div> 
+            </div>
+            <div class="comic col-xs-6 col-sm-6 col-md-4 col-lg-4">
+              <div class="comic-fence">
+                <div class="row">
+                <div class="comic-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <img src="../image/comic1.jpg" alt="Truyen 1" class="img-responsive"/>
+                </div>
+                <div class="comic-btn-see col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <!-- btn trigger modal -->
+                  <center>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Giới Thiệu</button>
+                  </center>
+                  <!-- modal tong quat -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">Đóng Giới Thiệu Truyện</span>
+                          </button>
+                          <!-- <h4 class="modal-title" id="myModalLabel">MED</h4> -->
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <img src="../image/comic1.jpg" alt="Truyen 1" class="img-responsive"/>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <h4><strong>Tên Truyện</strong><h4>
+                              <h5>Tác giả:</h5>
+                              <h5>Thể loại:</h5>
+                              <h5>Trạng thái:</h5>
+                              <h5>Số chương: </h5>
+                              <h5>Tóm tắt nội dung: <h6>1 chàng trai may mắn... </h6></h5>
+
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comic-btn-read ccol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <center><a href="../turnjs4/samples/steve-jobs/index.html"><button type="button" class="btn btn-primary">Đọc truyện</button></a></center>
+                </div>
+
+              </div>
+              </div>
+
+            </div>
+             <div class="comic col-xs-6 col-sm-6 col-md-4 col-lg-4">
+              <div class="row">
+                <div class="comic-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <img src="../image/comic2.jpg" alt="Truyen 2" class="img-responsive"/>
+                </div>
+                <div class="comic-btn-see col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <!-- btn trigger modal -->
+                  <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Giới Thiệu</button></center>
+                  <!-- modal tong quat -->
+                  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">Đóng Giới Thiệu Truyện</span>
+                          </button>
+                          <!-- <h4 class="modal-title" id="myModalLabel">MED</h4> -->
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <img src="../image/comic2.jpg" alt="Truyen 2" class="img-responsive"/>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <h4><strong>Tên Truyện</strong><h4>
+                              <h5>Tác giả:</h5>
+                              <h5>Thể loại:</h5>
+                              <h5>Trạng thái:</h5>
+                              <h5>Số chương: </h5>
+                              <h5>Tóm tắt nội dung: <h6>1 chàng trai may mắn... </h6></h5>
+
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comic-btn-read ccol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <center><a href="../turnjs4/samples/steve-jobs/index.html"><button type="button" class="btn btn-primary">Đọc truyện</button></a></center>
+                </div>
+
+              </div>
+              
+            </div>
+             <div class="comic col-xs-6 col-sm-6 col-md-4 col-lg-4">
+              <div class="row">
+                <div class="comic-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <img src="../image/comic3.jpg" alt="Truyen 3" class="img-responsive"/>
+                </div>
+                <div class="comic-btn-see col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <!-- btn trigger modal -->
+                  <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Giới Thiệu</button></center>
+                  <!-- modal tong quat -->
+                  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">Đóng Giới Thiệu Truyện</span>
+                          </button>
+                          <!-- <h4 class="modal-title" id="myModalLabel">MED</h4> -->
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <img src="../image/comic3.jpg" alt="Truyen 3" class="img-responsive"/>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <h4><strong>Tên Truyện</strong><h4>
+                              <h5>Tác giả:</h5>
+                              <h5>Thể loại:</h5>
+                              <h5>Trạng thái:</h5>
+                              <h5>Số chương: </h5>
+                              <h5>Tóm tắt nội dung: <h6>1 chàng trai may mắn... </h6></h5>
+
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="comic-btn-read ccol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <center><a href="../turnjs4/samples/steve-jobs/index.html"><button type="button" class="btn btn-primary">Đọc truyện</button></a></center>
+                </div>
+
+              </div>
+              
+            </div>
+            <div class="comic col-xs-6 col-sm-6 col-md-4 col-lg-4">
+              <div class="row">
+                <div class="comic-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <img src="../image/comic4.jpg" alt="Truyen 4" class="img-responsive"/>
+                </div>
+                <div class="comic-btn-see col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <!-- btn trigger modal -->
+                  <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">Giới Thiệu</button></center>
+                  <!-- modal tong quat -->
+                  <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">Đóng Giới Thiệu Truyện</span>
+                          </button>
+                          <!-- <h4 class="modal-title" id="myModalLabel">MED</h4> -->
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <img src="../image/comic4.jpg" alt="Truyen 4" class="img-responsive"/>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <h4><strong>Tên Truyện</strong><h4>
+                              <h5>Tác giả:</h5>
+                              <h5>Thể loại:</h5>
+                              <h5>Trạng thái:</h5>
+                              <h5>Số chương: </h5>
+                              <h5>Tóm tắt nội dung: <h6>1 chàng trai may mắn... </h6></h5>
+
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comic-btn-read ccol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <center><a href="../turnjs4/samples/steve-jobs/index.html"><button type="button" class="btn btn-primary">Đọc truyện</button></a></center>
+                </div>
+
+              </div>
+              
+            </div>
+            <div class="comic col-xs-6 col-sm-6 col-md-4 col-lg-4">
+              <div class="row">
+                <div class="comic-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <img src="../image/comic5.jpg" alt="Truyen 5" class="img-responsive"/>
+                </div>
+                <div class="comic-btn-see col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <!-- btn trigger modal -->
+                  <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">Giới Thiệu</button></center>
+                  <!-- modal tong quat -->
+                  <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">Đóng Giới Thiệu Truyện</span>
+                          </button>
+                          <!-- <h4 class="modal-title" id="myModalLabel">MED</h4> -->
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <img src="../image/comic5.jpg" alt="Truyen 5" class="img-responsive"/>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <h4><strong>Tên Truyện</strong><h4>
+                              <h5>Tác giả:</h5>
+                              <h5>Thể loại:</h5>
+                              <h5>Trạng thái:</h5>
+                              <h5>Số chương: </h5>
+                              <h5>Tóm tắt nội dung: <h6>1 chàng trai may mắn... </h6></h5>
+
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comic-btn-read ccol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <center><a href="../turnjs4/samples/steve-jobs/index.html"><button type="button" class="btn btn-primary">Đọc truyện</button></a></center>
+                </div>
+
+              </div>
+              
+            </div>
+            <div class="comic col-xs-6 col-sm-6 col-md-4 col-lg-4">
+              <div class="row">
+                <div class="comic-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <img src="../image/comic6.jpg" alt="Truyen 6" class="img-responsive"/>
+                </div>
+                <div class="comic-btn-see col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <!-- btn trigger modal -->
+                  <center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">Giới Thiệu</button></center>
+                  <!-- modal tong quat -->
+                  <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">Đóng Giới Thiệu Truyện</span>
+                          </button>
+                          <!-- <h4 class="modal-title" id="myModalLabel">MED</h4> -->
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <img src="../image/comic6.jpg" alt="Truyen 6" class="img-responsive"/>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              <h4><strong>Tên Truyện</strong><h4>
+                              <h5>Tác giả:</h5>
+                              <h5>Thể loại:</h5>
+                              <h5>Trạng thái:</h5>
+                              <h5>Số chương: </h5>
+                              <h5>Tóm tắt nội dung: <h6>1 chàng trai may mắn... </h6></h5>
+
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comic-btn-read ccol-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <center><a href="../turnjs4/samples/steve-jobs/index.html"><button type="button" class="btn btn-primary">Đọc truyện</button></a></center>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="left-side col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <div class="row">
+            
+                <div class="content-menu col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <center><h3>Thể Loại</h3></center>
+                </div>
+                <!-- row 1 -->
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Horror</p>
+                </div>
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Hentai</p>
+                </div>
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Action</p>
+                </div>
+                <!-- row 2 -->
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Science</p>
+                </div>
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Marvel</p>
+                </div>
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Comedy</p>
+                </div>
+                <!-- row 3 -->
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Shounen</p>
+                </div>
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Adults</p>
+                </div>
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Ecchi</p>
+                </div>
+                <!-- row 4 -->
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Mystery</p>
+                </div>
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Manhua</p>
+                </div>
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">One shot</p>
+                </div>
+                <!-- row 5 -->
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Yaoi</p>
+                </div>
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Yuri</p>
+                </div>
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Gender</p>
+                </div>
+                <!-- row 6 -->
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Supern atural</p>
+                </div>
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Martial art</p>
+                </div>
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Zombie</p>
+                </div>
+                <!-- row 7 -->
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Full</p>
+                </div>
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Ongoing</p>
+                </div>
+                <div class="type-comic1 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Bisexual</p>
+                </div>
+                <!-- row 8 -->
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">School</p>
+                </div>
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Active</p>
+                </div>
+                <div class="type-comic col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                  <p class="font-type-comic">Vampire</p>
+                </div>
+          </div>
+          <div class="left-facebook">
+            <iframe width="100%" height="150" src="https://www.youtube.com/embed/44vlfT6LE-g?ecver=1" frameborder="0" gesture="media" allowfullscreen style="border-radius: 5px;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<article>
+  <center>
+    <div class="container iframe-map">
+      <div class="row">
+        <center>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1916.9932425943593!2d108.22999405790306!3d16.06619109722071!2m3!1fA0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142182c7b31922f%3A0xb7dd4d783791397c!2zTmd1eeG7hW4gVGjDtG5nLCBBbiBI4bqjaSBUw6J5LCBTxqFuIFRyw6AsIMSQw6AgTuG6tW5nLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1505277023919" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </center>
+      </div>
+    </div>
+  </center>
+</article>
+<footer>
+  <div class="container">
+      <div class="row">
+        <div class="footer-contact col-xs-12 col-ms-12 col-md-4 col-lg-4">
+            <h5><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> hoanglocdn95@gmail.com <br>
+              <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 0935.96.49.49 <br>
+            </h5>
+        </div>
+        <div class="footer-center col-xs-12 col-ms-12 col-md-4 col-lg-4">
+            <h4>Copyright&copy Tran Hoang Loc DN092017</h4>
+        </div>
+        <div id="footer-right col-xs-12 col-ms-12 col-md-4 col-lg-4">
+            <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+            <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+            <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+            <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+            <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+            <button type="button" class="btn btn-default" style="visibility: hidden;"></button>
+            
+            <button type="button" class="btn btn-default btn-md btn-footer">
+                <a href="https://www.facebook.com/lst.tranloc"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>Facebook
+            </button>
+            <button type="button" class="btn btn-default btn-md btn-footer">
+                <a href="https://www.facebook.com/lst.tranloc"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>Tumblr
+            </button>
+        </div>
+          
+      </div>
+  </div>
+</footer>
+
+<!-- jQuery -->
+<!-- <script src="//code.jquery.com/jquery.js"></script> -->
+<!-- <script src="js/npm.js" type="text/javascript" charset="utf-8" async></script> -->
+<script type="text/javascript" src="../js/jquery.min.js" ></script>
+<script type="text/javascript" src="../js/bootstrap.js" ></script>
+<script type="text/javascript" src="../js/npm.js" ></script>
+<script type="text/javascript" src="../js/content-menu.js" defer></script>
+
+<script type="text/javascript" src="../js/jquery.flexisel.js" ></script>
+<script type="text/javascript" src="../js/jquery-3.2.1.slim.js" ></script>
+<!-- <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script> -->
+<script type="text/javascript" src="../js/jquery.js" ></script>
+<script type="text/javascript" src="../js/jquery.easing-sooper.js" ></script>
+<script type="text/javascript" src="../js/jquery.sooperfish.js" ></script>
+<script type="text/javascript" src="../js/jquery.kwicks-1.5.1.js" ></script>
+<script type="text/javascript" async>
+  $(document).ready(function() {
+    $('#images').kwicks({
+      max : 600,
+      spacing : 2
+    });
+  });
+</script>
+</body>
+</html>
